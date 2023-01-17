@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ABE4F97-CCDF-4440-992B-24FF0CA8D7D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vista</RootNamespace>
+    <AssemblyName>Vista</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasketbolHaberleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasketbolHaberleri.Designer.cs">
+      <DependentUpon>BasketbolHaberleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FutbolHaberleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FutbolHaberleri.Designer.cs">
+      <DependentUpon>FutbolHaberleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaberKategorileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaberKategorileri.Designer.cs">
+      <DependentUpon>HaberKategorileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaberSpor-Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaberSpor-Anasayfa.Designer.cs">
+      <DependentUpon>HaberSpor-Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaberYorumlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaberYorumlari.Designer.cs">
+      <DependentUpon>HaberYorumlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciPaneli.Designer.cs">
+      <DependentUpon>KullaniciPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGirisi.Designer.cs">
+      <DependentUpon>KullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.Designer.cs">
+      <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VoleybolHaberleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoleybolHaberleri.Designer.cs">
+      <DependentUpon>VoleybolHaberleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiPaneli.Designer.cs">
+      <DependentUpon>YoneticiPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiGirisi.Designer.cs">
+      <DependentUpon>YoneticiGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiYonetimi.Designer.cs">
+      <DependentUpon>YoneticiYonetimi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BasketbolHaberleri.resx">
+      <DependentUpon>BasketbolHaberleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FutbolHaberleri.resx">
+      <DependentUpon>FutbolHaberleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaberKategorileri.resx">
+      <DependentUpon>HaberKategorileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaberSpor-Anasayfa.resx">
+      <DependentUpon>HaberSpor-Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaberYorumlari.resx">
+      <DependentUpon>HaberYorumlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGirisi.resx">
+      <DependentUpon>KullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciPaneli.resx">
+      <DependentUpon>KullaniciPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciYonetimi.resx">
+      <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VoleybolHaberleri.resx">
+      <DependentUpon>VoleybolHaberleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiPaneli.resx">
+      <DependentUpon>YoneticiPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiGirisi.resx">
+      <DependentUpon>YoneticiGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiYonetimi.resx">
+      <DependentUpon>YoneticiYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Modelo.Alumno.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{7AA4D4E5-4A56-4AE0-9650-545A6FB6BCDE}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Model.csproj">
+      <Project>{78b03e12-74b9-4825-8ee2-4c634a75f035}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\authorized-person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unauthorized-person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\futbolbuton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basketbolbuton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voleybolbuton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
