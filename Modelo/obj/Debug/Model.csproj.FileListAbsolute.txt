@@ -1,0 +1,6 @@
+C:\Users\MCELTIKOGLU\source\repos\melih_odev\Modelo\bin\Debug\Modelo.dll
+C:\Users\MCELTIKOGLU\source\repos\melih_odev\Modelo\bin\Debug\Modelo.pdb
+C:\Users\MCELTIKOGLU\source\repos\melih_odev\Modelo\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\MCELTIKOGLU\source\repos\melih_odev\Modelo\obj\Debug\Modelo.dll
+C:\Users\MCELTIKOGLU\source\repos\melih_odev\Modelo\obj\Debug\Modelo.pdb
+C:\Users\MCELTIKOGLU\source\repos\melih_odev\Modelo\obj\Debug\Model.csproj.AssemblyReference.cache
